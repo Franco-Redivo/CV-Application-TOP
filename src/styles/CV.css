@@ -1,0 +1,20 @@
+.cv-wrapper{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 55%;
+    max-width: 70vh;
+    height: calc(100vh - 40px);
+    overflow: hidden;
+    
+}
+
+
+@media (max-width: 490px) {
+    .cv-wrapper {
+        width: 95%; /* Full width for very small screens */
+        height: auto; /* Allow height to adjust dynamically */
+    }
+}

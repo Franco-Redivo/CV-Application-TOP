@@ -1,0 +1,66 @@
+header{
+    background-color: var(--main-green);
+    padding: 10px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    clip-path: ellipse(100% 95% at 50% 0%);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); */
+}
+
+.header-title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: transparent;
+
+}
+
+.header-details{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.1rem;
+    font-weight: 500;
+    flex-wrap: wrap;
+    color: white;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.header-icon{
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    vertical-align: auto;
+}
+
+@media (max-width: 680px) {
+    .header-details {
+        font-size: 1rem; /* Adjust details font size */
+        flex-direction: column; /* Stack details vertically */
+        gap: 8px; /* Add spacing between details */
+    }
+    header {
+        padding: 8px 12px; /* Reduce padding for smaller screens */
+    }
+
+    .header-title {
+        font-size: 2rem; /* Reduce title size */
+    }
+
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 6px 10px; /* Further reduce padding for very small screens */
+    }
+
+    .header-title {
+        font-size: 1.8rem; /* Further reduce title size */
+    }
+
+    .header-details {
+        font-size: 0.9rem; /* Adjust details font size for mobile */
+    }
+}

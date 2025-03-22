@@ -1,0 +1,84 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.app{
+  display: flex;
+  margin: auto;
+  width: 100%;
+  padding: 30px 24px;
+  gap: 24px;
+  max-width: 1500px;
+  /* align-items: flex-start; */
+}
+
+
+.app-wrapper{
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  
+}
+
+.input-side{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  min-width: 300px;
+  gap: 18px;
+}
+
+@media (max-width: 1024px) {
+  .app{
+    padding: 14px;
+  }
+  .app-wrapper{
+    gap: 2rem;
+  } 
+
+  
+}
+
+@media (max-width: 980px) {
+  .input-side, .cv-wrapper{
+    margin: 0;
+    padding: 0;
+  }
+  .app-wrapper {
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: nowrap;
+    width: 100%; 
+  }
+  
+  .input-side {
+    width: 90%; /* Full width for form panels */
+    margin: 0 auto;
+    max-width: 600px;
+
+  }
+
+  .cv-wrapper {
+    width: 90%; /* Full width for CV */
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 490px) {
+  .app {
+    padding: 12px; /* Reduce padding for very small screens */
+  }
+  .app-wrapper{
+    gap: 1.5rem;
+  }
+
+  .input-side, .cv-wrapper {
+    width: 100%; /* Full width for both sections */
+  }
+}
+

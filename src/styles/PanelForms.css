@@ -1,0 +1,63 @@
+form{
+    background-color: white;
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.panel-wrapper{
+    background-color: white;
+    padding: 20px 0px;
+    width: 100%;
+    max-width: 600px;
+    min-width: 300px;
+    display: flex;
+    border-radius: 0 0 12px 12px;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0 auto;
+}
+
+h1{
+    background-color: var(--main-green);
+    color: white;
+}
+
+h2{
+    text-align: start;
+    padding: 0 20px;
+}
+
+.date-inputs{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.date-inputs .input-wrapper{
+    flex:1;
+    min-width: 100px;
+}
+
+
+@media (max-width: 490px) {
+    .date-inputs {
+        flex-direction: column; 
+        gap: 12px; 
+    }
+    .date-inputs input {
+        width: 100%; 
+    }
+    .panel-wrapper {
+        padding: 12px; /* Reduce padding for smaller screens */
+        margin: 0 auto;
+    }
+    h1 {
+        font-size: 1.5rem; /* Adjust heading size for mobile */
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,91 @@
+.education-title, .experience-title{
+    width: 200px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: var(--main-green);
+}
+
+.cv-section{
+    margin-top: 20px;
+    
+}
+
+.education-title{
+    border-radius: 0 8px 8px 0;
+}
+
+.experience-title{
+    justify-self: end;
+    border-radius: 8px 0 0 8px;
+}
+
+.name{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.cv-section p{
+    font-size: 1.1rem;
+    line-height: 1.5;
+    text-align: start;
+}
+
+.info{
+    display: flex;
+    gap: 14px;
+    padding: 16px 28px;
+    flex-wrap: wrap;
+}
+
+.date-location{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 25%;
+}
+
+.date-location p{
+    font-size: 1rem;
+}
+
+.main-info{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex-wrap: wrap;
+    width: 70%;
+    gap: 9px;
+}
+
+.main-info p{
+    display: block;
+    width: 100%;
+    padding: 6px;
+    background-color: var(--main-bg-color);
+    border-radius: 8px;
+}
+
+@media (max-width: 880px) {
+    .info {
+        flex-direction: column; /* Stack items vertically */
+        gap: 16px; /* Increase spacing for better readability */
+    }
+
+    .date-location, .main-info {
+        width: 100%; /* Take full width on smaller screens */
+    }
+}
+
+@media (max-width: 490px) {
+    /* .cv-section {
+        padding: 12px; 
+    } */
+
+    .education-title, .experience-title {
+        font-size: 1.3rem; /* Adjust title size for mobile */
+    }
+
+    .cv-section p {
+        font-size: 0.9rem; /* Adjust paragraph size for mobile */
+    }
+}
